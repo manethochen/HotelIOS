@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Booking" representedClassName="Booking" syncable="YES" codeGenerationType="class">
+        <attribute name="bookingName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="checkinDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="checkoutDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="customer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="by" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Customer" syncable="YES"/>
+    </entity>
+    <entity name="Customer" representedClassName="Customer" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="book" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Booking" syncable="YES"/>
+    </entity>
+    <entity name="Room" representedClassName="Room" syncable="YES" codeGenerationType="class">
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="roomName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="by" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Customer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Booking" positionX="-54" positionY="-9" width="128" height="135"/>
+        <element name="Customer" positionX="106" positionY="27" width="128" height="120"/>
+        <element name="Room" positionX="106" positionY="141" width="128" height="103"/>
+    </elements>
+</model>

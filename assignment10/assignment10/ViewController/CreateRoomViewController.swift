@@ -2,7 +2,7 @@
 //  CreateRoomViewController.swift
 //  assignment6
 //
-//  Created by 周媛 on 3/11/18.
+//  Created by Jiayun Chen on 3/11/18.
 //  Copyright © 2018 yuanyuanzhou. All rights reserved.
 //
 

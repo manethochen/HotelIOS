@@ -2,7 +2,7 @@
 //  DisplayBookingTableViewController.swift
 //  assignment8
 //
-//  Created by 周媛 on 3/22/18.
+//  Created by Jiayuan Chen on 3/22/18.
 //  Copyright © 2018 yuanyuanzhou. All rights reserved.
 //
 

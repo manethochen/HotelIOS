@@ -2,7 +2,7 @@
 //  TableViewController.swift
 //  TEST
 //
-//  Created by 周媛 on 3/20/18.
+//  Created by Jiayuan Chen on 3/20/18.
 //  Copyright © 2018 yuanyuanzhou. All rights reserved.
 //
 
